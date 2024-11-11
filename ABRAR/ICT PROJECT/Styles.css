@@ -1,0 +1,92 @@
+
+/* This is the general CSS for the website*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow: hidden;
+  background-color: black;
+}
+
+
+
+/*Oswald font*/
+
+.oswald-uniquifire {
+  font-family: "Oswald", serif;
+  font-optical-sizing: auto;
+  font-weight: lighter 300;
+  font-style: normal;
+}
+
+/*Fade in animation*/
+@keyframes fade-in {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+/* This is the part for the css of the graph and carousel section of the website  */
+#Bitcoin {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 100px;
+}
+
+#BTC-Container {
+  display: flex;
+  align-items: center;
+  gap: 400px; /* Space between text and graph */
+}
+
+#Bitcoin-Info {
+  color: white;
+  text-align: center;
+  max-width: 200px; /* Adjust to control the width of the text */
+  margin-top: -500px; /* Shift the text up slightly */
+  margin-right: 70px;
+}
+
+#Bitcoin-Info h1 {
+  font-size: 30px; /* Adjust the font size if needed */
+  white-space: nowrap; /* Forces the heading to stay on one line */
+  text-overflow: ellipsis; /* Adds "..." if the text exceeds the width */
+  font-family: "Oswald";
+  animation: fade-in 5s normal;
+}
+
+
+#Bitcoin-Graph {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+/* Set dimensions of the trading view widget */
+.tradingview-widget-container {
+  width: 400px;
+  height: 300px;
+  box-shadow: 0 0 20px 10px rgba(255, 215, 0, 0.8); /* Gold aura */
+  border-radius: 10px; /* Optional: adds rounded corners */
+}
+
+
+/* This is the section for the video editing and setting*/
+
+
+#bg-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+
+
+
