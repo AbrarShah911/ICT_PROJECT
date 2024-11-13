@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* bg color */
+body {
+    background-color: black;
+    color: white;
+    font-family: "Arial", sans-serif;
+}
+
+/* navigation shenanigans */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 120px;
+    padding: 0px 0px 20px 0px;
+    position: absolute;
+    top: 0;
+    left: 35%;
+    width: fit-content;
+}
+
+#site-name {
+    margin-left: 80px;
+    top: 120px;
+    position: fixed;
+    left: 20px;
+}
+
+#site-name a{
+    display: inline-block;
+    font-size: 32px;
+    text-shadow: 2px 2px rgb(0, 121, 61);
+    color: white;
+    font-family: "Oswald", sans-serif;
+}
+
+.navbar ul {
+    list-style: none;
+    width: auto;
+    height: auto;    ;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.navbar li {
+    margin: 0 20px;
+}
+
+.navbar li a {
+    text-decoration: none;
+    font-size: large;
+    font-family: "Oswald", sans-serif;
+    color: white;
+    padding: 10px;
+    transition: font-size 200ms;
+}
+
+.navbar li a:hover {
+    color: rgb(198, 255, 247);
+    font-size: 32px;
+    transition: font-size 200ms;
+    padding: auto;
+}
+
+/* bg img */
+.image-container {
+    position: relative;
+    width: 100%;
+}
+
+#image {
+    width: 100%;
+    mask-image: linear-gradient(to bottom, transparent, black 20%, black 80%, transparent);
+    -webkit-mask-image: linear-gradient(to bottom, transparent, black 20%, black 80%, transparent);
+}
+/* text on da image */
+.text-image {
+    font-family: "Oswald", sans-serif;
+    font-weight: 300;
+    font-size: 24px;
+    text-shadow: 2px 2px 2px rgb(0, 84, 68);;
+    position: absolute;
+    top: 57%;
+    left: 32%;
+    max-width: 700px;
+    transform: translate(-50%, -50%);
+}
+/* heading on da image */
+.text-heading{
+    font-family: "Oswald", sans-serif;
+    font-weight: 700;
+    font-size: 60px;
+    text-shadow: 2px 2px rgb(92, 255, 206);
+    position: absolute;
+    top: 32%;
+    left: 25%;
+    max-width: 500px;;
+    transform: translate(-50%, -50%);
+}
+
+.explore{
+    text-decoration: none;
+    color: white;
+    font-family: "Oswald", sans-serif;
+    font-weight: 300;
+    font-size: 32px;
+    position: absolute;
+    top: 62%;
+    left: 85%;
+    max-width: 500px;
+    width: 90px;
+    transform: translate(-50%, -50%);
+    background-color: rgba(40, 38, 38, 0.8);
+    box-shadow: 4px 2px 4px white;
+    padding: 4px 0px 4px 5px;
+    margin-right: 2px;
+    border-radius: 8px;
+    transition: all;
+    transition-duration: 200ms;
+}
+
+.explore:hover{
+    color: black;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(0, 108, 20);
+    box-shadow: 4px 2px 4px cyan;
+    transition: all;
+    transition-duration: 200ms;
+}
+/* font import */
+.oswald-uploadedfont {
+    font-optical-sizing: auto;
+    font-family: "Oswald", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
