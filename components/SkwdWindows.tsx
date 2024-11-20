@@ -9,14 +9,12 @@ const SkwdWindows = (props: SkwdWindowsProps) => {
   return (
     <div className="h-full w-full bg-slae-500">
       <div className="text-5xl text-white font-thin p-10 text-shadow ">
-        Project Updates
+      Booming Fintech industry:
       </div>
       <div className=" bg-purple-200 w-[200px] h-[200px] blur absolute"></div>
       <div className="relative text-lg  text-white/50 w-5/6 mx-auto ">
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse delectus
-        officiis hic aperiam accusantium incidunt dolores quos quaerat ex dicta
-        deserunt odio voluptate cumque totam provident nesciunt, minima
-        blanditiis! Adipisci.
+      We invite you to be a part of this exciting journey as we work to reshape the future of finance. Whether you&apos;re a s
+      easoned crypto enthusiast or just starting to explore digital currencies,
       </div>
       <div className="relative top-[-100px]">
         <div className="h-[200px] w-[500px] bg-gradient-to-r from-purple-600/25 to-[--main-color] ml-28 relative top-[200px] skew inter text-white text-xl p-5 rounded-md">

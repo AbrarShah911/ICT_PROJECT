@@ -9,19 +9,19 @@ import HomePage from "@/components/templates/Home";
 const navigationMenu = [
   {
     label: "Home",
-    link: "/account/create",
+    link: "#Hero",
   },
   {
     label: "Projects",
-    link: "/navigation",
+    link: "#Stats",
   },
   {
-    label: "Services",
-    link: "/account/create",
+    label: "Contributions",
+    link: "#Footer",
   },
   {
-    label: "About",
-    link: "/account/create",
+    label: "Statistics",
+    link: "#Chart",
   },
 ];
 
@@ -33,7 +33,7 @@ export default function Home() {
     <>
       {/* Top navigation menu */}
       <Navbar items={navigationMenu} />
-        <View className="h-screen w-screen fixed" id="Hi">
+        <View className="h-screen w-screen fixed hidden sm:block" id="Hi">
           
             <Particles />
 

@@ -15,7 +15,7 @@ const VerticalRoundedList = (props: VerticalRoundedListProps) => {
           />
             <div className="rounded-full bg-[--text-color] w-[50px] h-[50px] mr-5"></div>
             <div>
-                <p className="text-xl font-extrabold">{item.heading}</p>
+                <p className="md:text-xl font-extrabold">{item.heading}</p>
                 <p className="text-sm">
                     {item.text}
                 </p>

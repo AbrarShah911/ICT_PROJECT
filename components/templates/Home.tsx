@@ -9,6 +9,9 @@ import HomeHeader from "../widgets/HomeHeader";
 import Footer from  "../Footer"
 import dynamic from "next/dynamic";
 import { useEffect, useState } from "react";
+import ETH from "../ETH_content"
+import BTC from "../BTC_content"
+import USDT from "../USDT_content"
 import EthereumCard from "../Coins"
 const AdvancedRealTimeChart = dynamic(
   () => import("react-ts-tradingview-widgets").then((w) => w.AdvancedRealTimeChart),
@@ -22,10 +25,10 @@ const horizontalUserStats = [
     text: "Client : +185",
   },
   {
-    text: "Projects : +134",
+    text: "Projects : +10",
   },
   {
-    text: "Active Orders : +51",
+    text: "Orders : +51",
   },
 ];
 
@@ -80,7 +83,7 @@ const HomePage = () => {
     
     <div className="h-screen bg-slte-200/50 w-[100vw] relative">
 
-      <div className="p-10 pt-0 w-full grid grid-cols-1 md:grid-cols-2 grid-row-1 mb-10">
+      <div className="p-10 pt-0 w-full grid grid-cols-1 md:grid-cols-2 grid-row-1 mb-10" id="Hero">
         <div className="bg-back w-full row-span-1 h-full ml-10">
           <HomeHeader
             text={"View some of the major projects and prices"}
@@ -101,9 +104,9 @@ const HomePage = () => {
            SYSTEMS
           </div>
           <p className="text-white text-xl p-5 w-11/12 mt-5 hidden md:block">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore
-            voluptates molestias sit harum temporibus! Eum odit suscipit nisi
-            unde expedita?
+          we believe in the transformative power of blockchain 
+          technology to create a new financial ecosystem—one that empowers 
+          individuals, promotes transparency, and fosters global financial inclusion
           </p>
         </div>
       </div>
@@ -113,27 +116,27 @@ const HomePage = () => {
         elementGeneralClass="text-2xl md:text-3xl font-extrabold"
         className="mb-10 mt-10"
       />
-      <div className="w-full flex flex-row">
+      <div className="w-full flex flex-row" id="Stats">
         <div className="md:w-1/2"></div>
         <div className="w-full md:w-7/12 mt-20 mb-20 mr-10 backdrop-blur-lg">
           <VerticalRoundedList
             items={[
               {
-                heading: "Lorem Ipsum",
+                heading: "Financial Freedom",
                 text:
-                  "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore voluptates molestias sit harum temporibus! Eum odit suscipit nisi",
+                  "Empower individuals with the ability to manage their assets, transact securely, and access financial services without relying on traditional institutions.",
+                image: "",
+              },
+              {
+                heading: "Decentralization",
+                text:
+                  "Build a network that is free from centralized control, ensuring that no single entity can manipulate or control the flow of money.",
                 image: "Lorem Ipsum",
               },
               {
-                heading: "Lorem Ipsum",
+                heading: "Accessibility & Inclusion",
                 text:
-                  "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore voluptates molestias sit harum temporibus! Eum odit suscipit nisi",
-                image: "Lorem Ipsum",
-              },
-              {
-                heading: "Lorem Ipsum",
-                text:
-                  "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore voluptates molestias sit harum temporibus! Eum odit suscipit nisi",
+                  "Ensure that everyone, regardless of their location or socioeconomic status, can participate in the digital economy by providing easy-to-use tools and services.",
                 image: "Lorem Ipsum",
               },
             ]}
@@ -171,17 +174,15 @@ const HomePage = () => {
       </div>
 
 
-     <div className="h-[1000px]">
+     <div className="h-[1000px]" id="Chart">
      <LampContainer>
-        <p className="font-extrabold text-white text-5xl sm:text-7xl inter tracking-wide w-full flex flex-col items-center">
+        <p className="font-extrabold text-white text-3xl md:text-5xl sm:text-7xl inter tracking-wide w-full flex flex-col items-center">
           Modern Products
         </p>
 
         <p className="text-white ml-5 mt-10 text-lg leading-relaxed inter mb-1 w-full flex flex-col items-center">
           <span className="w-1/2 text-center">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa fuga
-            commodi ab quibusdam possimus tempora amet eveniet cum est eaque
-            libero autem natus doloribus quod
+          we are confident that our platform will play a crucial role in the global shift towards decentralized finance. Together, we can build a more inclusive, secure, and equitable financial future for all.
           </span>
         </p>
       </LampContainer>
@@ -193,19 +194,19 @@ const HomePage = () => {
       </div>
     
       <div className="w-full -translate-y-80 top-20 relative ml-5 sm:ml-0 sm:px-20 grid lg:grid-cols-2 lg:grid-rows-2 xl:grid-rows-1 xl:grid-cols-3 gap-2 sm:gap-5 sm:p-2 h-[700px]">
-        <Card className="" name={"/ethrum.jpeg"} color={" hue-rotate-[50deg] "} back={" bg-[#060407]"} responsive=" hidden xl:block">
+        <Card className="" name={"/ethrum.jpeg"} color={" hue-rotate-[50deg] "} back={" bg-[#060407]"} responsive=" hidden xl:block" modelContent={<ETH/>}>
         <EthereumCard ethereumData={ethereumData}/>
        </Card>
-        <Card className="" name={"/BTC.jpeg"} color={" hue-rotate-[200deg] "} back={" bg-[#060407]"}  responsive={""}>
+        <Card className="" name={"/BTC.jpeg"} color={" hue-rotate-[200deg] "} back={" bg-[#060407]"} responsive={""}  modelContent={<BTC/>}>
         <EthereumCard ethereumData={bitcoinData}/>
         </Card>
-        <Card className="" name={"/USDT.jpeg"} color={" hue-rotate-[50deg] "} back={" bg-[#060407]"}  responsive={""}>
+        <Card className="" name={"/USDT.jpeg"} color={" hue-rotate-[50deg] "} back={" bg-[#060407]"} responsive={""}  modelContent={<USDT/>}>
         <EthereumCard ethereumData={usdtData}/>
         </Card>
       </div> 
     <div>
     </div>
-  <div className="top-[80rem] sm:top-[60rem] md:top-[80rem] lg:top-[20rem] relative ml-10 xl:ml-0">
+  <div id="Footer" className="top-[80rem] sm:top-[60rem] md:top-[80rem] lg:top-[20rem] relative ml-10 xl:ml-0">
   <Footer/>
   </div>
     </div>

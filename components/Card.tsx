@@ -7,7 +7,7 @@ import Portal from "./Portal"
 // import { useLoader } from '@react-three/fiber'
 // import { GLTFLoader } from "three/examples/jsm/Addons.js";
 // import { DRACOLoader } from "three/examples/jsm/Addons.js";
-import ETH from "./ETH_content"
+
 //import Scene from "./GPGPU"
 import Image from "next/image";
 // function Scene() {
@@ -25,7 +25,8 @@ import Image from "next/image";
 interface CardProps {
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   children: any;
-//  modelContent : any;
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  modelContent : any;
   className: string;
   color:string;
   name:string;
@@ -86,8 +87,8 @@ const Card = (props: CardProps) => {
       />
               </div>
             <div className="mt-20">
-            <ETH/>
-            jklf
+            {/* <ETH/> */}
+            {props.modelContent}
             </div>
             </div>
           </motion.div>,

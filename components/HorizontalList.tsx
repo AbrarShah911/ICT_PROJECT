@@ -6,7 +6,7 @@ interface HorizontalListProps {
 
 const HorizontalList: React.FC<HorizontalListProps> = ({ items, className, elementGeneralClass }) => {
   return (
-      <div className={`w-full grid grid-cols-3 text-white ${className || ''}`}>
+      <div className={`w-full grid grid-cols-3  text-white ${className || ''}`}>
           {items.map((item, index) => {
               const [firstWord, ...restWords] = item.text.split(' ');
               return (

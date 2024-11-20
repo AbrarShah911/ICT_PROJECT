@@ -9,36 +9,36 @@ const Footer_impl = () => {
       icon: <CiCirclePlus />,
       title: 'Hashir Ali',
       items: [
-        { title: 'Item 1', url: '#', description: 'Description 1', openExternal: true },
-        { title: 'Item 2', url: '#', description: 'Description 2', openExternal: true },
-        { title: 'Item 3', url: '#', description: 'Description 3', openExternal: true },
+        { title: ' 1', url: '#', description: 'Designing', openExternal: true },
+        { title: ' 2', url: '#', description: 'Conversion to Next.js ', openExternal: true },
+        { title: ' 3', url: '#', description: 'Debugging', openExternal: true },
       ]
     },
     {
       icon: <CiCirclePlus />,
       title: 'Abrar Shah',
       items: [
-        { title: 'Item A', url: '#', description: 'Description A', openExternal: true },
-        { title: 'Item B', url: '#', description: 'Description B', openExternal: true },
-        { title: 'Item C', url: '#', description: 'Description C', openExternal: true },
+        { title: '1', url: '#', description: 'Chart integration', openExternal: true },
+        { title: '2', url: '#', description: 'Setting styles in css', openExternal: true },
+        { title: '3', url: '#', description: 'Creating the html structure', openExternal: true },
       ]
     },
     {
       icon: <CiCirclePlus />,
       title: 'Aly Rahim',
       items: [
-        { title: 'Item X', url: '#', description: 'Description X', openExternal: true },
-        { title: 'Item Y', url: '#', description: 'Description Y', openExternal: true },
-        { title: 'Item Z', url: '#', description: 'Description Z', openExternal: true },
+        { title: '1', url: '#', description: 'Developing the data cards', openExternal: true },
+        { title: '2', url: '#', description: 'Design Research', openExternal: true },
+        { title: '3', url: '#', description: 'gathering resources', openExternal: true },
       ]
     },
     {
       icon: <CiCirclePlus />,
-      title: 'Ehasan ul Haq',
+      title: 'Ehsan ul Haque',
       items: [
-        { title: 'Item X', url: '#', description: 'Description X', openExternal: true },
-        { title: 'Item Y', url: '#', description: 'Description Y', openExternal: true },
-        { title: 'Item Z', url: '#', description: 'Description Z', openExternal: true },
+        { title: '1', url: '#', description: 'Content writing', openExternal: true },
+        { title: '2', url: '#', description: 'Generating slogans', openExternal: true },
+        { title: '3', url: '#', description: 'Gathering info about coins', openExternal: true },
       ]
     }
   ];
@@ -58,7 +58,7 @@ const Footer_impl = () => {
           key: `${index}-${idx}`, // Unique key for each item
         }))
       }))}
-      bottom="Made by HAEA"
+      bottom="ICT PROJECT BY HASHIR, ABRAR, ALY, EHSAN"
     />
   
   );

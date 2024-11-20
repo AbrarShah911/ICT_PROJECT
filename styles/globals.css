@@ -161,3 +161,7 @@ header > * {
   width: 400px;
   height: 200px;
 } */
+
+html {
+  scroll-behavior: smooth;
+}
